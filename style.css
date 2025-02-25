@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Game Board */
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 8px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Message Container */
+.msg-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+#reset {
+    background: #ff4b5c;
+    color: white;
+}
+
+#reset:hover {
+    background: #ff1e3b;
+}
+
+#new-btn {
+    background: #1cb0f6;
+    color: white;
+}
+
+#new-btn:hover {
+    background: #0097e6;
+}
